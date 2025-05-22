@@ -1,0 +1,11 @@
+This is the chart i have to made and also a very important thing i have made metric table soft, otr and otc and i have create  measure for first graph ,OnTimeCount =  
+VAR SelectedCategory = SELECTEDVALUE(MetricSelector[Metric])
+RETURN
+    SWITCH(
+        SelectedCategory,
+        "SOFT", CALCULATE(COUNTROWS('Orders'), 'Orders'[Late_To_SOFT_Flag] = "On-time"),
+        "OTR", CALCULATE(COUNTROWS('Orders'), 'Orders'[Late_To_OTR_Flag] = "On-time"),
+        "OTC", CALCULATE(COUNTROWS('Orders'), 'Orders'[Late_To_OTC_Flag] = "On-time"),
+        BLANK()
+    )
+This metrix is so that the first bar chart where u it has lines it get filter by the metric.

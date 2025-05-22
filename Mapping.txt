@@ -1,0 +1,22 @@
+1)  standard order fulfilment header(
+2)  Metric , material, subset, week to date , month to date , 
+3) channel partner indica till filter
+4) customer type
+5) Top 20 Products by net amount usd
+6) Shipment Performace To SOft target Misses
+
+AA,AB,AC(Metric) all maped as late to soft flag, Late to Otr flag,Late to Otc flag
+H(Material) is Material class name
+AG(Customer region) Ship to region code
+AH(Customer sub-region) Ultimate consignee Sub region
+I(Platform) maps to Custom platform
+E(Shipping plant code) maps to Revenue plant code
+L(Primary site code) Primary site code
+AM(Channel partner indicator) Channel partner indicator
+W07,W08,...,W19 Fiscal week level,Inside bar its the line count.
+E (Plant)(Revenue Plant Code)
+AJ (Cutomer type)(Ship to Customer type)
+F(Material Number)
+G(Material)(Material Desc)
+AO(Net Amt USD)(Net Amt USD)
+
